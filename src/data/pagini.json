@@ -1,0 +1,107 @@
+[
+  {
+    "id": "instalare",
+    "titlu": "Instalare",
+    "sectiune": "inceput",
+    "taguri": ["setup", "npm", "instalare"],
+    "continut": "Pentru a instala libraria NovaUI trebuie sa rulezi comanda npm install novaui in terminal. Asigura-te ca ai Node.js versiunea 16 sau mai mare instalat pe calculator. Dupa instalare poti importa componentele direct in proiectul tau React. Procesul dureaza cam 30 de secunde in functie de conexiunea la internet."
+  },
+  {
+    "id": "configurare",
+    "titlu": "Configurare de baza",
+    "sectiune": "inceput",
+    "taguri": ["config", "setup"],
+    "continut": "Dupa instalare trebuie sa adaugi providerul principal in fisierul App.jsx. Importi NovaProvider si il pui in jurul intregii aplicatii. Poti pasa o tema initiala ca prop, de exemplu theme='dark' sau theme='light'. Fara provider componentele nu vor merge corect si vei vedea erori in consola."
+  },
+  {
+    "id": "primul-proiect",
+    "titlu": "Primul tau proiect",
+    "sectiune": "inceput",
+    "taguri": ["tutorial", "inceput"],
+    "continut": "Acum ca ai instalat totul poti crea primul proiect. Creeaza un fisier nou numit App.jsx si importa cateva componente de baza. Incepe cu un Button si un Card pentru a vedea cum arata libraria. Nu uita sa rulezi npm run dev pentru a porni serverul de dezvoltare."
+  },
+  {
+    "id": "structura-fisiere",
+    "titlu": "Structura fisierelor",
+    "sectiune": "inceput",
+    "taguri": ["setup", "organizare"],
+    "continut": "Este recomandat sa organizezi proiectul in foldere clare. Pune componentele in src/components, paginile in src/pages si stilurile in src/styles. NovaUI vine cu stiluri predefinite dar le poti suprascrie usor. Organizarea buna a fisierelor te va ajuta mult pe viitor."
+  },
+  {
+    "id": "faq-inceput",
+    "titlu": "Intrebari frecvente",
+    "sectiune": "inceput",
+    "taguri": ["faq", "ajutor"],
+    "continut": "Cele mai comune probleme la inceput sunt versiunile incompatibile de Node.js sau lipsa providerului. Daca vezi erori legate de peer dependencies incearca sa instalezi manual pachetele lipsa. Pentru orice problema poti deschide un issue pe GitHub sau sa intrebi pe Discord."
+  },
+  {
+    "id": "button",
+    "titlu": "Componenta Button",
+    "sectiune": "componente",
+    "taguri": ["ui", "button", "click"],
+    "continut": "Componenta Button vine in trei variante: primary, secondary si danger. Poti adauga un onClick handler pentru a trata evenimentele de click. Prop-ul disabled dezactiveaza butonul si ii schimba stilul automat. Butonul suporta si o proprietate loading care afiseaza un spinner."
+  },
+  {
+    "id": "card",
+    "titlu": "Componenta Card",
+    "sectiune": "componente",
+    "taguri": ["ui", "card", "layout"],
+    "continut": "Card-ul este un container vizual cu umbra si bordura rotunjita. Accepta un titlu si un subtitlu ca props. Continutul se pune intre tagurile de deschidere si inchidere. Poti adauga o imagine in header prin prop-ul headerImage."
+  },
+  {
+    "id": "modal",
+    "titlu": "Componenta Modal",
+    "sectiune": "componente",
+    "taguri": ["ui", "modal", "overlay"],
+    "continut": "Modalul afiseaza continut deasupra paginii cu un overlay intunecat. Se controleaza prin prop-ul isOpen care este un boolean. Butonul de inchidere apeleaza callback-ul onClose. Poti pune orice continut in interior inclusiv formulare sau imagini."
+  },
+  {
+    "id": "input",
+    "titlu": "Componenta Input",
+    "sectiune": "componente",
+    "taguri": ["ui", "input", "formular"],
+    "continut": "Inputul NovaUI vine cu eticheta integrata si mesaje de eroare. Prop-ul label seteaza textul de deasupra campului. Daca adaugi error='mesaj eroare' apare un text rosu dedesubt. Suporta toate tipurile HTML standard: text, email, password, number."
+  },
+  {
+    "id": "table",
+    "titlu": "Componenta Table",
+    "sectiune": "componente",
+    "taguri": ["ui", "table", "date"],
+    "continut": "Componenta Table simplifica afisarea datelor in format tabelar. Primeste un array de columns cu key si header, si un array de data cu obiectele de afisat. Suporta sortare pe coloane prin click pe header. Poti adauga paginare prin prop-ul pagination."
+  },
+  {
+    "id": "usetheme",
+    "titlu": "Hook useTheme",
+    "sectiune": "hooks",
+    "taguri": ["hooks", "tema", "dark-mode"],
+    "continut": "Hookul useTheme iti da acces la tema curenta si la functia de schimbare. Il importi din novaui si il apelezi in componentul tau. Returneaza un obiect cu theme si setTheme. Schimbarea temei se propaga automat la toate componentele din provider."
+  },
+  {
+    "id": "useform",
+    "titlu": "Hook useForm",
+    "sectiune": "hooks",
+    "taguri": ["hooks", "formular", "validare"],
+    "continut": "useForm simplifica gestionarea formularelor. Ii dai un obiect cu valorile initiale si regulile de validare. Returneaza values, errors, handleChange si handleSubmit. La submit verifica automat validarile si nu apeleaza callback-ul daca sunt erori."
+  },
+  {
+    "id": "usefetch",
+    "titlu": "Hook useFetch",
+    "sectiune": "hooks",
+    "taguri": ["hooks", "fetch", "api"],
+    "continut": "useFetch face cereri HTTP si gestioneaza starile de loading si error. Ii dai URL-ul ca parametru si optional un obiect de optiuni. Returneaza data, loading si error. Se re-executa automat cand se schimba URL-ul sau optiunile."
+  },
+  {
+    "id": "uselocalstorage",
+    "titlu": "Hook useLocalStorage",
+    "sectiune": "hooks",
+    "taguri": ["hooks", "storage", "persistenta"],
+    "continut": "useLocalStorage functioneaza exact ca useState dar salveaza valoarea in localStorage. Primul argument este cheia de storage, al doilea valoarea initiala. La refresh-ul paginii valoarea ramane. Util pentru preferinte utilizator sau cosul de cumparaturi."
+  },
+  {
+    "id": "usetoggle",
+    "titlu": "Hook useToggle",
+    "sectiune": "hooks",
+    "taguri": ["hooks", "toggle", "boolean"],
+    "continut": "useToggle este un hook simplu pentru valori boolean. Returneaza valoarea curenta si o functie toggle. La fiecare apel al functiei toggle valoarea se inverseaza. Util pentru meniuri, sectiuni expandabile sau orice UI cu stare deschis/inchis."
+  }
+]
